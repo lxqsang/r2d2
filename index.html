@@ -17,7 +17,7 @@
     <!-- favicon.ico -->
     <link rel="icon" href="assets/favicon.ico">
 
-    <title>Trattoria Porsenna</title>
+    <title>R2D2 dein automatisches Restaurant</title>
   </head>
 
   <body id="page-top">
@@ -25,7 +25,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Trattoria Porsenna</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Ihr automatisches Restaurant</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa fa-bars"></i>
         </button>
@@ -38,10 +38,10 @@
               <a class="nav-link js-scroll-trigger" href="#menu">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#where">Dove Siamo</a>
+              <a class="nav-link js-scroll-trigger" href="#where">Map</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contatti</a>
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -52,9 +52,9 @@
     <header class="masthead text-center text-white">
       <div class="container">
         <div class="intro-text text-uppercase">
-          <div class="intro-subheading">Locale Rustico</div>
-          <div class="intro-heading">Cucina Tradizionale Toscana</div>
-          <a class="btn btn-danger btn-big js-scroll-trigger" href="#about">Dai un'occhiata</a>
+          <div class="intro-subheading">Deine 2te Oma</div>
+          <div class="intro-heading">R2D2</div>
+          <a class="btn btn-danger btn-big js-scroll-trigger" href="#about">Besuch jetzt</a>
         </div>
       </div>
     </header>
@@ -64,7 +64,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">La Trattoria</h2>
+            <h2 class="section-heading text-uppercase">Das Restaurant</h2>
             <hr class="my-4">
           </div>
         </div>
@@ -226,7 +226,7 @@
       <div class="container">
         <div class="row my-5">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Dove Siamo</h2>
+            <h2 class="section-heading text-uppercase">Der Ort</h2>
             <hr class="mt-4 mb-5">
           </div>
         </div>
@@ -235,13 +235,13 @@
             <div id="map">
               <script>
                 function initMap() {
-                  var porsenna = {lat: 43.003833, lng: 11.957849};
+                  var munich = {lat: 48.003833, lng: 11.957849};
                   var map = new google.maps.Map(document.getElementById('map'), {
                     zoom: 18,
-                    center: porsenna
+                    center: munich
                   });
                   var marker = new google.maps.Marker({
-                    position: porsenna,
+                    position: munich,
                     map: map,
                     animation: google.maps.Animation.BOUNCE
                   });
@@ -260,7 +260,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-white text-uppercase">Sempre Disponibili</h2>
+            <h2 class="section-heading text-white text-uppercase">Kontakt und Lieferung</h2>
             <hr class="mt-4 mb-5">
           </div>
         </div>
@@ -292,7 +292,7 @@
                 <div class="col-lg-12 text-center">
                   <div id="success"></div>
                   <button id="sendMessageButton" class="btn btn-danger btn-big text-uppercase" type="submit">
-                    Invia Messaggio
+                    Senden
                   </button>
                 </div>
               </div>
@@ -336,7 +336,7 @@
             </ul>
           </div>
           <div class="col-md-12">
-            <span class="copyright">Trattoria Porsenna &copy; 2018</span>
+            <span class="copyright">R2D2 &copy; 2018-2019</span>
           </div>
         </div>
       </div>
