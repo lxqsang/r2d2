@@ -211,30 +211,22 @@
         <div class="row">
           <div class="col-lg-12">
             <div id="map">
-                            
-              <script>    
+              <script>
                 function initMap() {
-                  var myLatLng = {lat: 48.129202, lng: 11.596651};
-
-                  // Create a map object and specify the DOM element
-                  // for display.
+                  var porsenna = {lat: 48.129202, lng: 11.596651};
                   var map = new google.maps.Map(document.getElementById('map'), {
-                    center: myLatLng,
-                    zoom: 4
+                    zoom: 18,
+                    center: porsenna
                   });
-
-                  // Create a marker and set its position.
                   var marker = new google.maps.Marker({
+                    position: porsenna,
                     map: map,
-                    position: myLatLng,
-                    
+                    animation: google.maps.Animation.BOUNCE
                   });
-                }          
-                
+                }
               </script>
-              <script type="text/javascript"  
-                src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDkWIJdQU2JC2lAP7Y9Zj6tWx6h77X6V_8&callback=initMap" async defer>  
-              </script>
+              <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkWIJdQU2JC2lAP7Y9Zj6tWx6h77X6V_8&callback=initMap"
+              type="text/javascript"></script>
             </div>
           </div>
         </div>
