@@ -14,6 +14,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700' rel='stylesheet' type='text/css'>
     <!-- Custom Styles -->
     <link href="assets/css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/maps/documentation/javascript/cgc/demos.css">
     <!-- favicon.ico -->
     <link rel="icon" href="assets/favicon.ico">
 
@@ -210,22 +211,30 @@
         <div class="row">
           <div class="col-lg-12">
             <div id="map">
-              <script>
+                            
+              <script>    
                 function initMap() {
-                  var munich = {lat: 48.003833, lng: 11.957849};
+                  var myLatLng = {lat: 48.129202, lng: 11.596651};
+
+                  // Create a map object and specify the DOM element
+                  // for display.
                   var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 18,
-                    center: munich
+                    center: myLatLng,
+                    zoom: 4
                   });
+
+                  // Create a marker and set its position.
                   var marker = new google.maps.Marker({
-                    position: munich,
                     map: map,
-                    animation: google.maps.Animation.BOUNCE
+                    position: myLatLng,
+                    
                   });
-                }
+                }          
+                
               </script>
-              <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkWIJdQU2JC2lAP7Y9Zj6tWx6h77X6V_8&callback=initMap"
-              type="text/javascript"></script>
+              <script type="text/javascript"  
+                src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDkWIJdQU2JC2lAP7Y9Zj6tWx6h77X6V_8&callback=initMap" async defer>  
+              </script>
             </div>
           </div>
         </div>
